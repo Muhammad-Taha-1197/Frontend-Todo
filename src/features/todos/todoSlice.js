@@ -25,7 +25,7 @@ import axios from "axios";
 // ============================================================
 // API Base URL — points to our Express backend
 // ============================================================
-const API_URL = "http://localhost:3000/api/todos";
+const API_URL = import.meta.env.VITE_API_URL || "https://api-backend-07.netlify.app/api/todos";
 
 // ============================================================
 // Async Thunks — Handle API communication
